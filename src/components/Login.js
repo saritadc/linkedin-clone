@@ -120,7 +120,7 @@ const Welcome = styled.div`
   img {
     z-index: -1;
     width: 700px;
-    height: 600px;
+    height: 660px;
     position: absolute;
     right: -150px;
     @media (max-width: 768px) {
