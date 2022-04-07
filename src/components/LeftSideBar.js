@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LeftSideBar = (props) => {
   return (
@@ -6,26 +7,26 @@ const LeftSideBar = (props) => {
       <Card>
         <UserInfo>
           <CardBackground />
-          <a>
+          <Link to=' '>
             <Photo />
-            <Link>Welcome, there!</Link>
-          </a>
-          <a>
+            <Message>Welcome, there!</Message>
+          </Link>
+          <Link to=' '>
             <AddPhotoText>Add a photo</AddPhotoText>
-          </a>
+          </Link>
         </UserInfo>
         <Widget>
-          <a>
+          <Link to=''>
             <div>
               <span>Connections</span>
               <span>Grow your Network</span>
             </div>
-            <img src="./images/widget-icon.svg" alt="" />
-          </a>
+            <img src="./images/widget-icon.svg" alt="widget" />
+          </Link>
         </Widget>
         <Item>
           <span>
-            <img src="./images/item-icon.svg" alt="" />
+            <img src="./images/item-icon.svg" alt="item icon" />
             My Items
           </span>
         </Item>
@@ -75,7 +76,7 @@ const Photo = styled.div`
   margin: -38px auto 12px;
 `;
 
-const Link = styled.div`
+const Message = styled.div`
   font-size: 16px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.9);

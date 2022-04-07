@@ -1,17 +1,18 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
     <Container>
       <Content>
         <Logo>
-          <a href="/home">
+          <Link to="/">
             <img src="/images/home-logo.svg" alt="home logo" />
-          </a>
+          </Link>
         </Logo>
         <Search>
           <SearchIcon>
-            <img src="./images/search-icon.png" alt="search icon" />
+            <img src="/images/search-icon.png" alt="search icon" />
           </SearchIcon>
           <div>
             <input type="text" placeholder="Search" />
@@ -20,53 +21,53 @@ const Header = (props) => {
         <Nav>
           <NavListWrap>
             <NavList className="active">
-              <a>
-                <img src="./images/nav-home.svg" alt="nav home" />
+              <Link to=' '>
+                <img src="/images/nav-home.svg" alt="nav home" />
                 <span>Home</span>
-              </a>
+              </Link>
             </NavList>
             <NavList>
-              <a>
+              <Link to=' '>
                 <img src="./images/nav-network.svg" alt="nav network" />
                 <span>My Network</span>
-              </a>
+              </Link>
             </NavList>
             <NavList>
-              <a>
+              <Link to=' '>
                 <img src="./images/nav-jobs.svg" alt="nav jobs" />
                 <span>Jobs</span>
-              </a>
+              </Link>
             </NavList>
             <NavList>
-              <a>
+              <Link to=' '>
                 <img src="./images/nav-messaging.svg" alt="nav messaging" />
                 <span>Messaging</span>
-              </a>
+              </Link>
             </NavList>
             <NavList>
-              <a>
+              <Link to=' '>
                 <img
-                  src="./images/nav-notifications.svg"
+                  src="/images/nav-notifications.svg"
                   alt="nav notification"
                 />
                 <span>Notification</span>
-              </a>
+              </Link>
             </NavList>
             <User>
-              <a>
-                <img src="images/user.svg" alt="" />
+              <Link to=' '>
+                <img src="images/user.svg" alt="user" />
                 <span>
-                  Me <img src="images/down-icon.svg" alt="" />
+                  Me <img src="images/down-icon.svg" alt="down icon" />
                 </span>
-              </a>
+              </Link>
             </User>
             <Work>
-              <a>
-                <img src="./images/nav-work.svg" alt="nav work" />
+              <Link to=' '>
+                <img src="/images/nav-work.svg" alt="nav work" />
                 <span>
-                  Home <img src="images/down-icon.svg" alt="" />
+                  Home <img src="images/down-icon.svg" alt="down icon" />
                 </span>
-              </a>
+              </Link>
             </Work>
           </NavListWrap>
         </Nav>

@@ -1,10 +1,13 @@
 import styled from "styled-components";
-import LeftSideBar from "./LeftSideBar";
-import MainHome from "./MainHome";
-import RightSideBar from "./RightSidBar";
+import Header from "../../components/Header";
+import LeftSideBar from "../../components/LeftSideBar";
+import MainHome from "../../components/MainHome";
+import RightSideBar from "../../components/RightSidBar";
 
 const Home = (props) => {
   return (
+    <>
+    <Header />
     <Container>
       <Layout>
         <LeftSideBar />
@@ -12,6 +15,7 @@ const Home = (props) => {
         <RightSideBar />
       </Layout>
     </Container>
+    </>
   );
 };
 

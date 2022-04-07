@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Login = (props) => {
   return (
     <Container>
       <Nav>
-        <a href="/">
+        <Link to="/">
           <img src="/images/login-logo.svg" alt="" />
-        </a>
+        </Link>
         <div>
           <Join>Join now</Join>
           <SignIn>Sign in</SignIn>
@@ -15,11 +16,11 @@ const Login = (props) => {
       <Section>
         <Welcome>
           <h1>Welcome to our professional Community</h1>
-          <img src="./images/login-hero.svg" />
+          <img src="/images/login-hero.svg" alt="community"/>
         </Welcome>
         <Form>
           <Google>
-            <img src="./images/google.svg" />
+            <img src="/images/google.svg" alt="google logo"/>
             Sign in with Google
           </Google>
         </Form>
