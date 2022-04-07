@@ -7,30 +7,47 @@ const LeftSideBar = (props) => {
       <Card>
         <UserInfo>
           <CardBackground />
-          <Link to=' '>
+          <Link to=" ">
             <Photo />
             <Message>Welcome, there!</Message>
           </Link>
-          <Link to=' '>
+          <Link to=" ">
             <AddPhotoText>Add a photo</AddPhotoText>
           </Link>
         </UserInfo>
         <Widget>
-          <Link to=''>
+          <Link to="">
             <div>
               <span>Connections</span>
               <span>Grow your Network</span>
             </div>
-            <img src="./images/widget-icon.svg" alt="widget" />
+            <img src="/images/widget-icon.svg" alt="widget" />
           </Link>
         </Widget>
         <Item>
           <span>
-            <img src="./images/item-icon.svg" alt="item icon" />
+            <img src="/images/item-icon.svg" alt="item icon" />
             My Items
           </span>
         </Item>
       </Card>
+      <CommunityCard>
+        <Link to=" ">
+          <span>Groups</span>
+        </Link>
+        <Link to=" ">
+          <span>
+            Events
+            <img src="/images/plus-icon.svg" alt="plus icon" />
+          </span>
+        </Link>
+        <Link to=" ">
+          <span>Follow Hashtags</span>
+        </Link>
+        <Link to=" ">
+          <span>Discover more</span>
+        </Link>
+      </CommunityCard>
     </Container>
   );
 };
@@ -48,6 +65,9 @@ const Card = styled.div`
   position: relative;
   border: 1px solid rgb(0 0 0 / 15%);
   margin-bottom: 8px;
+  a {
+    text-decoration: none;
+  }
 `;
 
 const UserInfo = styled.div`
@@ -96,7 +116,6 @@ const Widget = styled.div`
   padding: 12px;
 
   & > a {
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,15 +147,43 @@ const Item = styled.a`
   padding: 12px;
   font-size: 12px;
   display: block;
-  span{
-      display: flex;
-      align-items: centers;
-      color: rgba(0, 0, 0, 1);
+  span {
+    display: flex;
+    align-items: centers;
+    color: rgba(0, 0, 0, 1);
   }
 
-  &:hover{
-      background-color: rgba(0, 0, 0, 0.08);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
   }
 `;
 
+const CommunityCard = styled(Card)`
+  padding: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  a {
+    color: black;
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+    &:hover {
+      color: #8a66c2;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      color: rgba(0, 0, 0, 0.6);
+      border-top: 1px solid #d6cec2;
+      padding: 12px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+`;
 export default LeftSideBar;
