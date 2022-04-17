@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainHome = (props) => {
+const MainHome = (props: any) => {
   return <Container>main side</Container>;
 };
 

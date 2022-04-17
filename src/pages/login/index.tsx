@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Login = (props) => {
+const Login = (props:any) => {
   return (
     <Container>
       <Nav>

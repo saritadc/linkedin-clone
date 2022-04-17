@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const LeftSideBar = (props) => {
+const LeftSideBar = (props:any) => {
   return (
     <Container>
       <Card>
