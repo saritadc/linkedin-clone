@@ -4,7 +4,7 @@ import LeftSideBar from "../../components/LeftSideBar";
 import MainHome from "../../components/MainHome";
 import RightSideBar from "../../components/RightSidBar";
 
-const Home = (props) => {
+const Home = (props:any) => {
   return (
     <>
     <Header />

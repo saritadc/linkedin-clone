@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = (props:any) => {
   return (
     <Container>
       <Content>

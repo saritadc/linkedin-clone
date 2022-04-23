@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const RightSidBar = (props) => {
+const RightSidBar = (props:any) => {
   return (
     <Container>
       <FollowCard>
